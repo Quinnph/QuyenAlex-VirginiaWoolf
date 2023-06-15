@@ -7,6 +7,7 @@
     <title>Virginia Woolf</title>
 </head>
 <body>
+
     <header>
         <h1>
             Virginia WOOLF
@@ -21,7 +22,7 @@
             <br>
             <a href="https://en.wikipedia.org/wiki/Virginia_Woolf" target="_blank">See more on Wikipedia.</a>
             <br>
-            Wanna change something on this page? <a href="#contact-form">Write Us!</a>
+            Wanna change something on this page? <a href="#contact-form-container">Write Us!</a>
         </p>
     </header>
 
@@ -59,32 +60,52 @@
                 <a href="https://www.google.de/books/edition/Jacob_s_Room/xnC9EAAAQBAJ?hl=en&gbpv=0" target="_blank"><img src="https://books.google.de/books/publisher/content?id=xnC9EAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3ap4JijnhGJaL9KfusqKwEslzHNQ&w=1280" alt="Jacob's Room (Novel--1922)"></a>
                 <a href="https://www.google.de/books/edition/Mrs_Dalloway/sNVhEAAAQBAJ?hl=en&gbpv=0" target="_blank"><img src="https://books.google.de/books/publisher/content?id=sNVhEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3M7HWA0ITKL0hx-Q_tOgRcoDS0og&w=1280" alt="Mrs Dalloway (Novel--1925)"></a>
                 <a href="https://www.google.de/books/edition/The_Common_Reader_First_Series/6QcjDgAAQBAJ?hl=en&gbpv=0" target="_blank"><img src="https://books.google.de/books/publisher/content?id=6QcjDgAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3AgweiUS9hr9LYBhwkYCtRtUGsjA&w=1280" alt="The Common Reader (Essays--1925)"></a>
-                    <!-- <li>
-                        <a href="" target="_blank"><img src="" alt="To the Lighthouse (Novel--1927)"></a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank"><img src="" alt="Orlando: A Biography (Novel--1928)"></a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank"><img src="" alt="A Room of One's Own (Essay--1929)"></a>
-                    </li>
-                    <li>
-                        <a href="" target="_blank"><img src="" alt="The Waves (Novel--1931)"></a>
-                    </li> -->
                 </ul>
             </div>
         </div>
-
     </main>
 
-    <section>
-        <form id="contact-form">
-
+    <section id="contact-form-container">
+        <h3>
+            Contact Form
+        </h3>
+        <form id="contact-form" action="action.php">
+            <div class="contact-form-name">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Your first name" minlength="3" maxlength="10">
+                <br>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Your last name" minlength="3" maxlength="10" required>
+            </div>
+            <div class="contact-form-contact">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" minlength="7" required>
+            </div>
+            <div class="contact-form-message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            </div>
+            <div class="contact-form-marketing-feedback">
+                <label>How did you hear from us?</label>
+                </br>
+                <label for="marketing-feedback">Google</label>
+                <input type="radio" id="google-marketing-feedback" name="marketing-feedback" value="Google" checked>
+                </br>
+                <label for="marketing-feedback">Instagram</label>
+                <input type="radio" id="instagram-marketing-feedback" name="marketing-feedback" value="Instagram">
+                </br>
+                <label for="marketing-feedback">Others</label>
+                <input type="radio" id="others-marketing-feedback" name="marketing-feedback" value="Others">
+            </div>
+            <div class="contact-form-submit">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </section>
 
     <footer>
         <p>&#9729;A joint project of Quyen and Loredana - TechLab SS23&#9729;</p>
     </footer>
+
 </body>
 </html>
