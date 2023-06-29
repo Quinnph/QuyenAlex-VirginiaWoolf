@@ -1,7 +1,5 @@
 body {
     background-image: linear-gradient(to right, #b6fbff, #83a4d4);
-    /* Why does this font not work? */
-    font-family: 'Inter', sans-serif;
 }
 
 #mainNavbar {
@@ -37,31 +35,62 @@ body {
     color: #002244;
 }
 
-#header h1 {
-    font-weight: 500;
-    font-size: 2rem;
-    color: #002244;
-}
-
-#header a {
-    text-decoration: none;
-    color: #002244;
-}
-
-#main-pic {
+#first-portrait,
+#second-portrait {
     width: auto;
     height: 600px;
 }
 
+#header {
+    color: #36454f;
+}
+
+#header h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    color: #002244;
+}
+
+#header a {
+    color: #e0ffff;
+}
+
+#header .blockquote {
+    text-align: right;
+    color: #e0ffff;
+}
+
+#header .blockquote-footer {
+    color: #36454f;
+}
+
+.basic-information-container {
+    color: #36454f;
+}
+
+.basic-information-container h2 {
+    color: #002244;
+}
+
+.major-works-container h2 {
+    color: #002244;
+}
+
 #book-list img {
-    width: 400px;
+    width: auto;
     height: 600px;
     padding: 20px 20px;
 }
 
-#book-list {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
+#contact-form-container {
+    color: #36454f;
+}
+
+#contact-form-container h2{
+    color: #002244;
+}
+
+footer {
+    color: #e0ffff;
+    font-size: 1.5rem;
 }
