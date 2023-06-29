@@ -1,0 +1,67 @@
+body {
+    background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+    /* Why does this font not work? */
+    font-family: 'Inter', sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #002244;
+}
+
+#mainNavbar .nav-link {
+    color: #b8b4be;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #e0ffff;
+}
+
+#mainNavbar .navbar-brand {
+    color: #e0ffff;
+    font-size: 1.5rem;
+}
+
+#mainNavbar .btn-wiki {
+    color: #e0ffff;
+    border-color: #e0ffff;
+}
+
+#mainNavbar .btn-wiki:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+#mainNavbar .btn-wiki:hover {
+    background-color: #e0ffff;
+    color: #002244;
+}
+
+#header h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #002244;
+}
+
+#header a {
+    text-decoration: none;
+    color: #002244;
+}
+
+#main-pic {
+    width: auto;
+    height: 600px;
+}
+
+#book-list img {
+    width: 400px;
+    height: 600px;
+    padding: 20px 20px;
+}
+
+#book-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
