@@ -37,8 +37,8 @@ body {
 
 #first-portrait,
 #second-portrait {
-    width: auto;
-    height: 600px;
+    width: 480px;
+    height: auto;
 }
 
 #header {

@@ -165,41 +165,48 @@
                     </div>
                 </div>
 
-                <div class="row align-items-center justify-content-center py-3" id="contact-form-container">
-                    <div class="col-md-12 text-center">
-                        <h2>Contact Form</h2>
-                        <form id="contact-form" action="/">
-                            <div class="contact-form-name">
-                                <label for="firstname">First Name</label>
-                                <input type="text" id="firstname" name="firstname" placeholder="Your first name" minlength="3" maxlength="10">                                <br>
-                                <label for="lastname">Last Name</label>
-                                <input type="text" id="lastname" name="lastname" placeholder="Your last name" minlength="3" maxlength="10" required>
+                <div class="container col-md text-left" id="contact-form-container">
+                    <h2 class="display-5 text-center">Contact Form</h2>
+                    <form action = "#nowhere">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstname">First name</label>
+                                <input type="firstname" class="form-control" id="firstname" placeholder="Your first name" minlength="3">
+                                <small id="firstnameHelp" class="form-text text-muted">Your firstname should contain at least 3 characters.</small>
                             </div>
-                            <div class="contact-form-contact">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your email address" minlength="7" required>
+                            <div class="form-group col-md-6">
+                                <label for="lastname">Last name</label>
+                                <input type="lastname" class="form-control" id="lastname" placeholder="Your last name" minlength="3">
+                                <small id="lastnameHelp" class="form-text text-muted">Your lastname should contain at least 3 characters.</small>
                             </div>
-                            <div class="contact-form-message">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" placeholder="Your message" required></textarea>
-                            </div>
-                            <div class="contact-form-marketing-feedback">
-                                <label>How did you hear from us?</label>
-                                </br>
-                                <label for="marketing-feedback">Google</label>
-                                <input type="radio" id="google-marketing-feedback" name="marketing-feedback" value="Google" checked>
-                                </br>
-                                <label for="marketing-feedback">Instagram</label>
-                                <input type="radio" id="instagram-marketing-feedback" name="marketing-feedback" value="Instagram">
-                                </br>
-                                <label for="marketing-feedback">Others</label>
-                                <input type="radio" id="others-marketing-feedback" name="marketing-feedback" value="Others">
-                            </div>
-                            <div class="contact-form-submit">
-                                <button type="button" class="btn btn-primary submit-btn">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your email address" required>
+                            <small id="emailHelp" class="form-text text-muted">Please provide a valid email. This field is <strong>required</strong>.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <input type="message" class="form-control" id="message" placeholder="Your message here">
+                        </div>
+                        <label>How did you hear from us?</label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="google-marketing-feedback" name="marketing-feedback" value="Google" class="custom-control-input" checked>
+                            <label class="custom-control-label"  for="google-marketing-feedback">Google</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="instagram-marketing-feedback" name="marketing-feedback" value="Instagram" class="custom-control-input">
+                            <label class="custom-control-label"  for="instagram-marketing-feedback">Instagram</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="others-marketing-feedback" name="marketing-feedback" value="Others" class="custom-control-input">
+                            <label class="custom-control-label"  for="others-marketing-feedback">Others</label>
+                        </div>
+                        <br>
+                        <div class="contact-form-submit">
+                            <button type="button" class="btn btn-primary submit-btn">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </main>
 
