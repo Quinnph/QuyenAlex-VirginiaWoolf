@@ -1,93 +1,79 @@
 body {
     background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+    color: #36454f;
 }
 
-#mainNavbar {
+.bold-text {
+    font-weight: bold;
+}
+
+.navbar {
     font-size: 1.5rem;
     font-weight: 500;
+    color: #b8b4be;
     background-color: #002244;
 }
 
-#mainNavbar .nav-link {
-    color: #b8b4be;
-}
-
-#mainNavbar .nav-link:hover {
+.navbar .nav-link:hover {
     color: #e0ffff;
 }
 
-#mainNavbar .navbar-brand {
+.navbar .navbar-brand {
     color: #e0ffff;
     font-size: 1.5rem;
 }
 
-#mainNavbar .btn-wiki {
+.navbar .btn-wiki {
     color: #e0ffff;
     border-color: #e0ffff;
 }
 
-#mainNavbar .btn-wiki:not(:disabled):not(.disabled) {
+.navbar .btn-wiki:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
 
-#mainNavbar .btn-wiki:hover {
+.navbar .btn-wiki:hover {
     background-color: #e0ffff;
     color: #002244;
 }
 
-#first-portrait,
-#second-portrait {
+.first-portrait,
+.second-portrait {
     width: 480px;
     height: auto;
 }
 
-#header {
+.header {
     color: #36454f;
 }
 
-#header h1 {
+.header h1 {
     font-weight: 500;
     font-size: 3rem;
     color: #002244;
 }
 
-#header a {
+.header a {
     color: #e0ffff;
 }
 
-#header .blockquote {
+.header .blockquote {
     text-align: right;
     color: #e0ffff;
 }
 
-#header .blockquote-footer {
+.header .blockquote-footer {
     color: #36454f;
 }
 
-.basic-information-container {
-    color: #36454f;
-}
-
-.basic-information-container h2 {
+h2 {
     color: #002244;
 }
 
-.major-works-container h2 {
-    color: #002244;
-}
-
-#book-list img {
+.book-list img {
     width: auto;
     height: 600px;
     padding: 20px 20px;
-}
-
-#contact-form-container {
-    color: #36454f;
-}
-
-#contact-form-container h2{
-    color: #002244;
 }
 
 footer {

@@ -11,7 +11,7 @@
 
     <body>
         <div class="container">
-            <nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark fixed-top text-uppercase">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top text-uppercase">
                 <a class="navbar-brand" href="index.html">Biography</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,8 +42,7 @@
                         <figure class="figure portrait">
                             <img 
                                 src="imgs/Virginia-Woolf-1.jpeg" 
-                                class="figure-img img-thumbnail img-fluid rounded float-left"
-                                id = "first-portrait" 
+                                class="figure-img img-thumbnail img-fluid rounded float-left first-portrait"
                                 alt="Virginia Woolf portrait"">
                             <figcaption class="figure-caption">
                                 Virginia Woolf photographed by Gisèle Freund, 1939. 
@@ -54,7 +53,7 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <div id="header" class="text-left">
+                        <div class="header" class="text-left">
                             <h1>Virginia WOOLF</h1>
                             <h2>(1882-1941)</h2>
                             <p>
@@ -63,7 +62,7 @@
                                 Also known as: Adeline Virginia Stephen
                                 <br>
                                 Wanna change something on this page? 
-                                <a href="#contact-form-container" id="hyperlink"><strong>Write Us!</strong></a>
+                                <a href="#contact-form-container" id="hyperlink"><span class="bold-text">Write Us!</span></a>
                             </p>
                             <blockquote class="blockquote pt-5">
                                 <p class="mb-0 font-italic">
@@ -81,13 +80,13 @@
                     <div class="col-md-6 text-left">
                         <h2>Basic Information</h2>
                         <p>
-                            <strong>Born:</strong> January 25, 1882 - London - England
+                            <span class="bold-text">Born:</span> January 25, 1882 - London - England
                             <br>
-                            <strong>Died:</strong> March 28, 1941 (aged 59) - England
+                            <span class="bold-text">Died:</span> March 28, 1941 (aged 59) - England
                             <br>
-                            <strong>Movement / Style:</strong> Modernism
+                            <span class="bold-text">Movement / Style:</span> Modernism
                             <br>
-                            <strong>Notable Family Members:</strong> 
+                            <span class="bold-text">Notable Family Members:</span> 
                             <ul>
                                 <li>spouse Leonard Woolf</li>
                                 <li>father Sir Leslie Stephen</li>
@@ -98,9 +97,8 @@
                     <div class="col-md-6">
                         <figure class="figure portrait">
                             <img 
-                                src="imgs/Virginia-Woolf-2.webp" 
-                                class="figure-img img-thumbnail img-fluid rounded float-right"
-                                id = "second-portrait" 
+                                src="imgs/Virginia-Woolf-2.jpg" 
+                                class="figure-img img-thumbnail img-fluid rounded float-right second-portrait"
                                 alt="Virginia Woolf portrait"">
                             <figcaption class="figure-caption text-right">
                                 Unknown author
@@ -112,7 +110,7 @@
                 <div class="row align-items-center major-works-container justify-content-center py-3">
                     <div class="col-md-12 text-left">
                         <h2>Major Works</h2>
-                        <div id="book-list">
+                        <div class="book-list">
                             <div class="row align-items-center book-list-container justify-content-center">
                                 <div class="col-md-6">
                                     <a 
@@ -186,7 +184,7 @@
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Your email address" required>
-                            <small id="emailHelp" class="form-text text-muted">Please provide a valid email. This field is <strong>required</strong>.</small>
+                            <small id="emailHelp" class="form-text text-muted">Please provide a valid email. This field is <span class="bold-text">required</span>.</small>
                         </div>
                         <div class="invalid-feedback">
                             Please provide a valid email address.
