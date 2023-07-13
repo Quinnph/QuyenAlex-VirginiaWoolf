@@ -76,6 +76,10 @@ h2 {
     padding: 20px 20px;
 }
 
+#message {
+    height: 200px;
+}
+
 footer {
     color: #e0ffff;
     font-size: 1.5rem;
