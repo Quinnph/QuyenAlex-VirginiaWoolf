@@ -1,5 +1,6 @@
 const contactForm = document.querySelector('form')
 let dataObject = []
+let currentIndex = 0
 const modalButton = document.querySelector('#modalButton')
 const submitButton = document.querySelector('.submit-btn')
 const modal = document.querySelectorAll('.modal')
@@ -27,8 +28,8 @@ modalButton.addEventListener('click', printToModal)
 submitButton.addEventListener('click', reset)
 submitButton.addEventListener('click', closeModalSubmit)
 
-//TODO: fix bug - clear modal after hit Send in case user send another form
-//TODO: fix bug - update dataObject and display in modal when user hit Back and edit input fields
+// TODO: fix bug - clear modal after hit Send in case user send another form
+// TODO: fix bug - update dataObject and display in modal when user hit Back and edit input fields
 
 function collectData() {
     dataObject.push({
@@ -37,11 +38,14 @@ function collectData() {
         email: document.querySelector('#email').value,
         message: document.querySelector('#message').value
     });
-    dataObject = dataObject[0];
+}
+
+function getCurrentIndex() {
+    currentIndex = dataObject.length - 1;
 }
 
 function printToModal() {
-    Object.entries(dataObject).forEach(entry => {
+    Object.entries(dataObject[currentIndex]).forEach(entry => {
         const [key, value] = entry;
         let newItem = document.createElement('p');
         newItem.innerText = `${key}: ${value}`;
@@ -51,6 +55,10 @@ function printToModal() {
 
 function reset() {
     contactForm.reset();
+    // $('#modal').on('hidden.bs.modal', function () {
+    //     $(".modal-body").html("");
+    //     console.log(modalBody);
+    // })
 }
 
 function closeModalSubmit() {
